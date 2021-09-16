@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install"
+    "heroku-postbuild": "YARN_PRODUCTION=true yarn install"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +22,8 @@
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-import": "^2.24.2",
     "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "yarn": "1.x"
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "heroku-postbuild": "YARN_PRODUCTION=true yarn install"
+    "heroku-postbuild": "yarn start"
   },
   "author": "",
   "license": "ISC",

@@ -25,6 +25,7 @@ app.get('/api/test', (req, res) => {
 
 // Route files
 const discount = require('./routes/discount');
+
 // Mount routers
 app.use('/api/discount', discount);
 

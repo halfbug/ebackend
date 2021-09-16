@@ -8,7 +8,7 @@ app.use(express.json());
 require('dotenv').config();
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect("mongodb+srv://freelanceUser:sadaf123@cluster0-h6by4.mongodb.net/naamscan?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
